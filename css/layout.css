@@ -123,6 +123,9 @@ a{
 a[href^="tel:"], a[href^="mailto:"] {
     white-space: nowrap;
 }
+b {
+    font-weight: 800;
+}
 button {
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
