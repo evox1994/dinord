@@ -151,12 +151,23 @@ $(document).ready(function(){
 	}
 	ScrollEl();
 
+	function FullWindowBlockHeight(){
+		if ($('.b-thanks').length){
+			var hh = $('.header').outerHeight();
+			var bh = $(window).outerHeight() - hh;
+			$('.b-thanks').css('min-height',bh);
+		}
+	}
+	FullWindowBlockHeight();
+
 	$(window).on('scroll',function(){
 		ScrollEl();
+		FullWindowBlockHeight();
 	});
 
 	$(window).resize(function(){
 		ScrollEl();
+		FullWindowBlockHeight();
 	});
 
 });

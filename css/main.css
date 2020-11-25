@@ -784,7 +784,7 @@
 	border-radius: 5px;
 	background-color: #ffffff;
 	width: 95%;
-	max-width: 560px;
+	max-width: 620px;
 	text-align: center;
 }
 .popup.popup-policy {
@@ -1132,6 +1132,130 @@
 	max-width: 100%;
 	margin: 0 auto;
 	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+}
+
+.b-docs {
+	position: relative;
+	text-align: left;
+}
+.b-docs .title {
+	display: block;
+	font-size: 20px;
+	font-weight: 800;
+	margin-top: 50px;
+}
+.b-docs-list {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+.b-docs-list > li {
+	width: calc(100%/3 - 20px);
+	margin-top: 30px;
+	margin-right: 30px;
+}
+.b-docs-list > li:nth-child(3n) {
+	margin-right: 0;
+}
+.b-docs-list > li .name {
+	font-size: 16px;
+	font-weight: 800;
+	color: #011f5c;
+	max-width: 270px;
+}
+.b-docs-list > li .size {
+	display: inline-block;
+	padding: 10px 25px;
+	border-radius: 100px;
+	background-color: #ebebeb;
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.b-contacts {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+.b-contacts > li {
+	width: calc(100%/3 - 20px);
+}
+.b-contacts > li .icon {
+	height: 92px;
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.b-contacts > li .icon img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.b-contacts > li .title {
+	font-size: 20px;
+	font-weight: 800;
+	margin-top: 25px;
+}
+.b-contacts > li .text {
+	margin-top: 15px;
+	font-size: 16px;
+}
+
+.b-map {
+	position: relative;
+	height: 500px;
+}
+.b-map iframe {
+	display: block;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.b-thanks {
+	padding: 80px 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.b-thanks-image {
+	margin-top: 50px;
+}
+.b-thanks-image img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.b-policy {
+	margin-top: 50px;
+	text-align: left;
+}
+.b-policy .item {
+	margin-top: 30px;
+}
+.b-policy .item .title {
+	display: block;
+	font-size: 24px;
+	font-weight: 800;
+}
+.b-policy .item .text {
+	margin-top: 20px;
+	font-size: 16px;
 }
 
 
@@ -1715,6 +1839,71 @@
 	.b-gallery > li:nth-child(3n) {
 		margin-right: 0;
 	}
+
+	.b-docs .title {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	.b-docs-list > li {
+		width: calc(100%/3 - 40px/3);
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+	.b-docs-list > li .name {
+		font-size: 14px;
+		max-width: none;
+	}
+	.b-docs-list > li .size {
+		margin-top: 10px;
+		padding: 7px 15px;
+		font-size: 12px;
+	}
+
+	.b-contacts {
+		margin-top: 30px;
+	}
+	.b-contacts > li {
+		width: calc(100%/3 - 40px/3);
+	}
+	.b-contacts > li .icon {
+		height: 60px;
+	}
+	.b-contacts > li .title {
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	.b-contacts > li .text {
+		margin-top: 10px;
+		font-size: 14px;
+	}
+
+	.b-map {
+		height: 400px !important;
+	}
+
+	.b-thanks {
+		padding: 40px 0;
+	}
+	.b-thanks-image {
+		margin-top: 30px;
+	}
+	.b-thanks-image img {
+		max-height: 300px;
+	}
+
+	.b-policy {
+		margin-top: 30px;
+	}
+	.b-policy .item {
+		margin-top: 20px;
+	}
+	.b-policy .item .title {
+		font-size: 18px;
+	}
+	.b-policy .item .text {
+		font-size: 14px;
+		margin-top: 15px;
+	}
 }
 @media screen and (max-width: 670px){
 	.b-brands {
@@ -1749,6 +1938,14 @@
 	}
 	.b-gallery > li:nth-child(4n) {
 		margin-right: 0;
+	}
+
+	.b-contacts {
+		display: block;
+	}
+	.b-contacts > li {
+		width: 100%;
+		margin: 20px auto 0;
 	}
 }
 @media screen and (max-width: 520px){
@@ -1873,8 +2070,20 @@
 		-ms-transform: none;
 		transform: none;
 	}
+
+	.b-docs-list {
+		justify-content: space-between;
+	}
+	.b-docs-list > li {
+		width: calc(50% - 10px);
+		margin-right: 0;
+	}
 }
 @media screen and (max-width: 460px){
+	.b-title br, .b-subtitle br {
+		display: none;
+	}
+
 	.b-brands {
 		display: block;
 		margin-top: 30px;
@@ -1913,6 +2122,17 @@
 	}
 	.b-gallery > li:nth-child(4n),
 	.b-gallery > li:nth-child(3n) {
+		margin-right: auto;
+	}
+
+	.b-docs-list {
+		display: block;
+	}
+	.b-docs-list > li {
+		width: 100%;
+		margin: 20px auto 0;
+	}
+	.b-docs-list > li:nth-child(3n) {
 		margin-right: auto;
 	}
 }
