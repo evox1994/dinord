@@ -1464,6 +1464,9 @@
 		margin: 50px auto 0;
 	}
 
+	.b-advs {
+		align-items: flex-start;
+	}
 	.b-advs > li {
 		display: block;
 		text-align: center;
@@ -1754,6 +1757,9 @@
 		top: 5px;
 	}
 
+	.b-send-catalog .image img {
+		max-height: 300px;
+	}
 	.b-send-catalog .send .title {
 		font-size: 20px;
 	}
@@ -1846,6 +1852,10 @@
 		max-width: none;
 		margin-top: 20px;
 	}
+	.b-advs > li .icon {
+		width: 40px;
+		height: 40px;
+	}
 	.b-advs > li .text {
 		font-size: 14px;
 	}
@@ -1862,20 +1872,12 @@
 		margin-top: 20px;
 	}
 	.b-brand .content .country {
-		display: inline-block;
-		vertical-align: top;
 		width: 30px;
 		height: 30px;
-		margin-bottom: 0;
-		margin-right: 10px;
+		margin: 0 auto 10px;
 	}
 	.b-brand .content .b-title {
-		display: inline-block;
-		vertical-align: top;
-		max-width: calc(100% - 45px);
-		text-align: left;
 		font-size: 20px;
-		margin-top: 2.5px;
 	}
 	.b-brand .content .text {
 		text-align: left;
@@ -2128,6 +2130,12 @@
 	.b-send-catalog .image {
 		width: 100%;
 	}
+	.b-send-catalog .image img {
+		-webkit-transform: translateX(20px);
+		-moz-transform: translateX(20px);
+		-ms-transform: translateX(20px);
+		transform: translateX(20px);
+	}
 	.b-send-catalog .send {
 		width: 100%;
 		text-align: center;
@@ -2161,7 +2169,7 @@
 		margin: 0;
 	}
 	.b-advs > li .text {
-		width: calc(100% - 90px);
+		width: calc(100% - 60px);
 	}
 
 	.b-send-small {
@@ -2225,6 +2233,7 @@
 	}
 	.b-brands > li {
 		width: 100%;
+		max-width: 300px;
 		margin: 20px auto 0;
 	}
 	.b-brands > li:nth-child(4n),
@@ -2233,13 +2242,13 @@
 	}
 
 	.b-about-card {
-		padding: 20px;
+		padding: 20px 20px 0;
 	}
 	.b-about-card .image {
 		width: 100%;
 		position: relative;
 		height: auto;
-		margin-bottom: 20px;
+		margin-top: 20px;
 	}
 	.b-about-card .image img {
 		position: relative;
