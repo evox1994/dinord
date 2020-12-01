@@ -122,6 +122,15 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$('.drop-cat > li').on('mouseenter',function(){
+		var nav = $(this).attr('data-nav');
+
+		$(this).parent('.drop-cat').find('li').removeClass('active');
+		$(this).parents('.wrap').find('.drop-nav').removeClass('active');
+		$(this).parents('.wrap').find('.drop-nav[data-nav="'+nav+'"]').addClass('active');
+		$(this).addClass('active');
+	});
+
 	function ScrollEl(){
 		if ( $('.b-scroll').length ){
 			var ww = $(window).width();
