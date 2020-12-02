@@ -547,7 +547,8 @@
 }
 .b-face .wrap .image img {
 	display: block;
-	max-width: 100%;
+	width: 100%;
+	max-width: 447px;
 	margin-left: auto;
 	margin-right: 0;
 }
@@ -752,7 +753,8 @@
 }
 .b-send-catalog .image img {
 	display: block;
-	max-width: 100%;
+	width: 100%;
+	max-width: 436px;
 	margin: 0 auto;
 }
 .b-send-catalog .send {
@@ -998,7 +1000,7 @@
 	padding-top: 25px;
 	margin: 0 auto;
 }
-.b-brand .image .brand-img {
+.b-brand .image .card-img {
 	display: block;
 	max-width: 100%;
 	margin: 0 auto;
@@ -1154,7 +1156,8 @@
 }
 .b-send-small .image img {
 	display: block;
-	max-width: 100%;
+	width: 100%;
+	max-width: 182px;
 	margin: 0 auto;
 }
 .b-send-small .title {
@@ -1363,7 +1366,8 @@
 }
 .b-thanks-image img {
 	display: block;
-	max-width: 100%;
+	width: 100%;
+	max-width: 432px;
 	margin: 0 auto;
 }
 
@@ -1388,6 +1392,8 @@
 
 @media screen and (max-width: 1370px){
 	.b-send-small .image img {
+		width: auto;
+		max-width: 100%;
 		max-height: 200px;
 	}
 }
@@ -1512,6 +1518,8 @@
 		width: calc(45% - 15px);
 	}
 	.b-send-small .image img {
+		width: 100%;
+		max-width: 182px;
 		max-height: none;
 	}
 	.b-send-small .content {
@@ -1758,6 +1766,8 @@
 	}
 
 	.b-send-catalog .image img {
+		width: auto;
+		max-width: 100%;
 		max-height: 300px;
 	}
 	.b-send-catalog .send .title {
@@ -2020,6 +2030,8 @@
 		margin-top: 30px;
 	}
 	.b-thanks-image img {
+		width: auto;
+		max-width: 100%;
 		max-height: 300px;
 	}
 
@@ -2099,6 +2111,7 @@
 		height: 200px;
 	}
 	.b-face .wrap .image img {
+		width: auto;
 		max-width: none;
 		max-height: 100%;
 		position: absolute;
